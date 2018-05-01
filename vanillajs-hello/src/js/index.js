@@ -21,8 +21,10 @@ var types = ["&clubs;", "&diams;", "&hearts;", "&spades;"];
 var suits = ["clubs", "diams","hearts","spades"];
 var cards = new Array();
     
-    var randomType = Math.floor(Math.random() *3);
+    var randomType = Math.floor(Math.random() *4);
+    console.log(randomType);
     var randomRank = Math.floor(Math.random() *13);
+    console.log(randomRank);
 
     let theSymbol = document.querySelector('.symbol');
     theSymbol.innerHTML = "<span>"+types[randomType]+"</span>";
